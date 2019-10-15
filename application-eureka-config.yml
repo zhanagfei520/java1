@@ -1,0 +1,36 @@
+spring:
+  profiles: dev
+    application:
+      name: abcms-eurekaServer-config
+
+server:
+  port: 8400
+
+eureka:
+  instance:
+    hostname: eureka8400.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka8400.com:8400/eureka
+
+#配置测试环境test
+spring:
+  profiles: test
+    application:
+      name: abcms-eurekaServer-config
+
+server:
+  port: 8400
+
+eureka:
+  instance:
+    hostname: eureka8400.com
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    service-url:
+      defaultZone: http://eureka8400.com:8400/eureka
+
+
