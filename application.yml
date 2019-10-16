@@ -10,4 +10,4 @@
   spring:
     application:
       name: abcmsc-config-test
-    profiles: test
+    profiles: test 
